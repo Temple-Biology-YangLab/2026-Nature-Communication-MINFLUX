@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+data/
+Data/
+results/
+figures/
+interactive_html/
+validation/results/
+*.tif
+*.mat
+*.xls
+*.csv

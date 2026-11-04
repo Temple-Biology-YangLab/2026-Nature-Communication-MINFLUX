@@ -1,0 +1,61 @@
+{
+  "keep_min_localizations": 800,
+  "kde_evaluation_method": "binned_gaussian",
+  "subvoxel_refinement": true,
+  "measured_metric": "circle_fit_refined_radius_nm",
+  "baseline_k_band": 3,
+  "k_list": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    10,
+    15,
+    20
+  ],
+  "multiplier_list": [
+    0.5,
+    0.6,
+    0.75,
+    0.9,
+    1.0,
+    1.1,
+    1.25,
+    1.5,
+    2.0
+  ],
+  "vox_nm": 1.0,
+  "kernel": "gaussian",
+  "bootstrap": "none (deterministic sweep); CIs reported by Bulk Bootstrapping",
+  "bandwidth_window": "measured per trace; no external precision constant",
+  "floor_definition": "median nearest-neighbour distance (FLOOR_K=2)",
+  "ceiling_definition": "Silverman-style critical bandwidth (annular profile merges)",
+  "objective_selectors": [
+    "knn_k3",
+    "silverman",
+    "scott",
+    "lscv"
+  ],
+  "lscv_max_points": 1500,
+  "peak_diagnostics": true,
+  "critical_bandwidth": {
+    "computed": true,
+    "grid_nm": "geomspace(1.5,15,18)",
+    "profile_r_max_nm": 25.0,
+    "profile_dr_nm": 1.0,
+    "min_peak_radius_nm": 3.0,
+    "central_dip_fraction": 0.9,
+    "reference": "Silverman 1981 JRSS-B 43:97 (critical bandwidth for mode merging)",
+    "caveat": "monotonicity proved for 1D KDE of raw data; g(r) here is an azimuthal average of a projected 3D KDE, so monotonicity is expected but not guaranteed (see critical_bw_monotone)"
+  },
+  "annulus_radius_window_nm": [
+    6.0,
+    13.0
+  ],
+  "n_traces_kept": 196,
+  "parallel_mode": "process",
+  "n_workers": 8
+}

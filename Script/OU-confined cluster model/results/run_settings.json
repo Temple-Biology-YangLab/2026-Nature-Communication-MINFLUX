@@ -1,0 +1,137 @@
+{
+  "cluster_numbers": [
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "ring_radius_nm": 10.0,
+  "dwell_s": 0.025,
+  "n_traces": 600,
+  "score": {
+    "w_central": 10.0,
+    "w_annulus": 5.0,
+    "annulus_band_nm": 3.0
+  },
+  "construct_parameters": {
+    "GFP-Nup58-HaloTag": {
+      "dt": 0.000359,
+      "noise": [
+        10.02,
+        9.37,
+        3.36
+      ],
+      "tau_xy": 0.01,
+      "tau_z_old": 0.002722,
+      "z_a": 18.29,
+      "z_tau_a": 0.001272,
+      "z_b": 11.26,
+      "z_tau_b": 0.007045,
+      "target_sd": [
+        15.3,
+        15.78,
+        20.14
+      ]
+    },
+    "HaloTag-Nup54-GFP": {
+      "dt": 0.000365,
+      "noise": [
+        9.53,
+        9.14,
+        2.18
+      ],
+      "tau_xy": 0.006,
+      "tau_z_old": 0.002792,
+      "z_a": 19.73,
+      "z_tau_a": 0.001456,
+      "z_b": 8.5,
+      "z_tau_b": 0.018028,
+      "target_sd": [
+        14.31,
+        14.07,
+        20.34
+      ]
+    },
+    "HaloTag-Nup58-GFP": {
+      "dt": 0.000371,
+      "noise": [
+        9.19,
+        8.72,
+        0.0
+      ],
+      "tau_xy": 0.01,
+      "tau_z_old": 0.004048,
+      "z_a": 21.42,
+      "z_tau_a": 0.002048,
+      "z_b": 10.73,
+      "z_tau_b": 0.023942,
+      "target_sd": [
+        14.16,
+        14.21,
+        22.14
+      ]
+    },
+    "HaloTag-Nup62-GFP": {
+      "dt": 0.00036,
+      "noise": [
+        9.3,
+        8.78,
+        0.0
+      ],
+      "tau_xy": 0.004,
+      "tau_z_old": 0.004117,
+      "z_a": 19.53,
+      "z_tau_a": 0.001546,
+      "z_b": 7.77,
+      "z_tau_b": 0.015022,
+      "target_sd": [
+        12.8,
+        12.9,
+        20.28
+      ]
+    }
+  },
+  "analysis": {
+    "VOX_NM": 1.0,
+    "GRID_MAX_NM": 120.0,
+    "CENTER_NM": 60.0,
+    "K_NN": 3,
+    "BANDWIDTH_FIXED_NM": null,
+    "SLICE_SPACING_NM": 10.0,
+    "SLICE_THICKNESS_NM": 1.0,
+    "ZOOM_MIN_NM": 30.0,
+    "ZOOM_MAX_NM": 90.0,
+    "GLOBAL_NOISE_CUTOFF": 0.2,
+    "SLICE_RELATIVE_THRESHOLD": 0.5,
+    "MIN_PEAK_DISTANCE_VOX": 2,
+    "SUBVOXEL_REFINEMENT": true,
+    "SUBVOXEL_WINDOW_XY_NM": 2.0,
+    "SUBVOXEL_STEP_XY_NM": 0.1,
+    "SUBVOXEL_STEP_Z_NM": 0.25,
+    "MIN_PEAKS_FOR_FIT": 3,
+    "ANNULUS_BAND_HALF_WIDTH_NM": 1.0
+  },
+  "example_traces": {
+    "4": [
+      "HaloTag-Nup54-GFP",
+      264
+    ],
+    "5": [
+      "HaloTag-Nup58-GFP",
+      54
+    ],
+    "6": [
+      "HaloTag-Nup62-GFP",
+      111
+    ],
+    "7": [
+      "GFP-Nup58-HaloTag",
+      497
+    ],
+    "8": [
+      "HaloTag-Nup62-GFP",
+      41
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "keep_min_localizations": 800,
+  "n_bootstraps": 1000,
+  "random_seed": 12345,
+  "kde_evaluation_method": "binned_gaussian",
+  "measured_metric": "circle_fit_refined_radius_nm",
+  "k_band": 3,
+  "fixed_bandwidth": true,
+  "parallel_mode": "process",
+  "n_workers": 8,
+  "bootstrap_method": "full_refined_pipeline_per_replicate"
+}

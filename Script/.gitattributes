@@ -1,0 +1,13 @@
+# Normalize text files to LF in the repository and working tree
+* text=auto eol=lf
+
+# Binary files: never convert
+*.png    binary
+*.npz    binary
+*.npy    binary
+*.opju   binary
+*.xlsx   binary
+*.mat    binary
+*.msr    binary
+*.zip    binary
+*.pyc    binary

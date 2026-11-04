@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.spyproject/
+.DS_Store
+Thumbs.db
+
+# Raw MINFLUX bead data and cache: files exceed GitHub's 100 MB limit
+MINFLUX Stability/Data/
+
+# Local backup of the scripts before cleanup
+_original_backup/
